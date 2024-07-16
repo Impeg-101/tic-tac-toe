@@ -1,0 +1,33 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "game_server/tic_tac_toe/static",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      },
+      {
+        "src": "game_server/tic_tac_toe",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "50mb"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/static/(.*)",
+        "dest": "game_server/tic_tac_toe/static/build/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "game_server/tic_tac_toe/$1"
+      }
+    ],
+    "env": {
+      "VERCEL_ENV": "development"
+    }
+  }
+  
