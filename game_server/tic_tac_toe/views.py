@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http.response import JsonResponse
+from django.http import HttpResponse 
 
 from rest_framework.decorators import api_view
 from rest_framework.parsers import JSONParser 
@@ -61,5 +62,8 @@ def check_winner(game):
     return winner
 
 def index(request):
-    return render(request, "index.html")
+    try:
+        return render(request, "index.html")
+    except:
+        return HttpResponse("Failed to provide index.html")
 
