@@ -24,4 +24,5 @@ from tic_tac_toe import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.index, name="index"),
+    path("<path:any>/", views.index, name="index"),
 ] 
