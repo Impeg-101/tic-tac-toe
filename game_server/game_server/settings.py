@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-x&1qazr6%p)o0bhgvh@5^t7@ikj8bmxc6%5=%r9ikkd7z@wboy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".vercel.app"]
 
 
 # Application definition
@@ -86,7 +86,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'game_server.wsgi.application'
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000", "http://localhost:8000", "http://127.0.0.1:8000", "http://127.0.0.1:3000"
+    "http://localhost:3000", "http://localhost:8000", "http://127.0.0.1:8000", "http://127.0.0.1:3000", "https://tic-tac-toe-orpin-eta.vercel.app"
 ]
 
 # Database
