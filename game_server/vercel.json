@@ -5,14 +5,14 @@
         "src": "game_server/wsgi.py",
         "use": "@vercel/python",
         "config": {
-          "maxLambdaSize": "15mb"
+          "maxLambdaSize": "15mb", "runtime": "python3.9" 
         }
       },
       {
         "src": "game_server/asgi.py",
         "use": "@vercel/python",
         "config": {
-          "maxLambdaSize": "15mb"
+          "maxLambdaSize": "15mb", "runtime": "python3.9" 
         }
       }
     ],
