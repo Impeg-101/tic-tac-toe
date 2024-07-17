@@ -86,7 +86,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'game_server.wsgi.application'
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000", "http://localhost:8000", "http://127.0.0.1:8000", "http://127.0.0.1:3000", "https://tic-tac-toe-orpin-eta.vercel.app"
+    "http://localhost:3000", "http://localhost:8000", "http://127.0.0.1:8000", "http://127.0.0.1:3000", "https://tic-tac-toe-orpin-eta.vercel.app", "tic-tac-toe-backend-lovat.vercel.app"
 ]
 
 # Database
