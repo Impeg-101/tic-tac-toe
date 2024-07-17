@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "game_server/game_server/wsgi.py",
+        "src": "game_server/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "15mb"
         }
       },
       {
-        "src": "game_server/game_server/asgi.py",
+        "src": "game_server/asgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "15mb"
@@ -19,11 +19,11 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "game_server/game_server/wsgi.py"
+        "dest": "game_server/wsgi.py"
       },
       {
         "src": "/(.*)",
-        "dest": "game_server/game_server/asgi.py"
+        "dest": "game_server/asgi.py"
       }
     ],
     "env": {
