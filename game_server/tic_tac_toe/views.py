@@ -64,6 +64,7 @@ def check_winner(game):
 def index(request):
     try:
         return render(request, "index.html")
-    except:
+    except Exception as e:
+        print(e)
         return HttpResponse("Failed to provide index.html")
 

@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     // Initialize WebSocket connection
-    ws.current = new WebSocket('http://localhost:8000/ws/socket-server/');
+    ws.current = new WebSocket('https://tic-tac-toe-backend-mauve.vercel.app/ws/socket-server/');
     // ws.current = new WebSocket(`ws://${window.location.host}/ws/socket-server/`);
 
     // Define event listeners

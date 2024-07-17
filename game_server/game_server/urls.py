@@ -23,12 +23,5 @@ from tic_tac_toe import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('api/makePlayer', include(views.urls)),
     path("", views.index, name="index"),
-    # path('api/create/', views.create_player),
-    # path('api/find/', views.find_opponent),
-    # path('api/join/', views.join_game),
-    # path('api/leave/', views.leave_game),
-    # path('api/move/', views.make_move),
-    # path('api/undoStep', include(views.urls)),
 ] 
